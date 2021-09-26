@@ -9,8 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        GridView(
+            setDivide: 2,
+            setGridType: GridType.VERTICAL,
+            setItemtype: .flexible(minimum: 20),
+            setSpacing: 5,
+            setContent: {
+                ForEach(1...100, id: \.self) { count in
+                    Text("Placeholder \(count)")
+                }
+            }
+        )
     }
 }
 
