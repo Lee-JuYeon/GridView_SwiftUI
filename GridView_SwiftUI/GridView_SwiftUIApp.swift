@@ -1,0 +1,17 @@
+//
+//  GridView_SwiftUIApp.swift
+//  GridView_SwiftUI
+//
+//  Created by 이주연 on 2021/09/26.
+//
+
+import SwiftUI
+
+@main
+struct GridView_SwiftUIApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
